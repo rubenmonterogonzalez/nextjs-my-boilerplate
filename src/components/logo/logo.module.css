@@ -1,0 +1,8 @@
+.logo {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  margin: auto;
+  height: auto;
+  width: auto;
+}

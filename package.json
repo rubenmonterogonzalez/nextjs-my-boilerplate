@@ -1,24 +1,60 @@
 {
-  "name": "nextjs-authjs-prisma-mantine",
+  "name": "nextjs-my-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma:push": "prisma db push",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:reset": "prisma migrate reset --force",
+    "prisma:postinstall": "prisma generate",
+    "prisma:studio": "prisma studio"
   },
   "dependencies": {
+    "@auth/core": "^0.34.2",
+    "@auth/prisma-adapter": "^2.4.2",
+    "@mantine/carousel": "^7.12.1",
+    "@mantine/charts": "^7.12.1",
+    "@mantine/code-highlight": "^7.12.1",
+    "@mantine/core": "^7.12.1",
+    "@mantine/dates": "^7.12.1",
+    "@mantine/dropzone": "^7.12.1",
+    "@mantine/form": "^7.12.1",
+    "@mantine/hooks": "^7.12.1",
+    "@mantine/modals": "^7.12.1",
+    "@mantine/notifications": "^7.12.1",
+    "@mantine/nprogress": "^7.12.1",
+    "@mantine/spotlight": "^7.12.1",
+    "@mantine/tiptap": "^7.12.1",
+    "@prisma/client": "^5.18.0",
+    "@tabler/icons-react": "^3.12.0",
+    "@tiptap/extension-link": "^2.6.0",
+    "@tiptap/react": "^2.6.0",
+    "@tiptap/starter-kit": "^2.6.0",
+    "crypto-js": "^4.2.0",
+    "dayjs": "^1.11.12",
+    "embla-carousel-react": "^8.1.8",
+    "next": "14.2.5",
+    "next-auth": "^5.0.0-beta.20",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.2.5"
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
+    "@types/crypto-js": "^4.2.2",
+    "@types/node": "^20.14.15",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.5"
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8.4.41",
+    "postcss-preset-mantine": "^1.17.0",
+    "postcss-simple-vars": "^7.0.1",
+    "prisma": "^5.18.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
   }
 }
